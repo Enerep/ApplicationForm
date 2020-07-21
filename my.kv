@@ -1,0 +1,24 @@
+WindowManager:
+    StartWindow:
+    Page:
+    EndProject:
+
+<StartWindow>
+
+    name: "main"
+    Button:
+        text: "Go To The Form"
+        on_release:
+            app.root.current = "page"
+
+<Page>
+    name: "page"
+
+
+    Button:
+        text: "To The Last Page"
+        on_release:
+            app.root.current = "end"
+
+<EndProject>
+    name: "end"
